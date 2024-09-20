@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #151515;
+    background-image: url('media/b.jpg');
 }
 
 #mainTitle{
@@ -21,6 +21,7 @@ body{
     width: 100vw;
     height: 5vh;
     padding: 0;
+    animation: colorChange 20s infinite;
 }
 
 #mainContent{
@@ -51,4 +52,34 @@ a{
 
 .sections{
     color: #ff9f1c;
+}
+
+@keyframes colorChange {
+    0%{
+        color: #ff0000;
+    }
+    25%{
+        color: #00ff00;
+    }
+    50%{
+        color: #0000ff;
+    }
+    75%{
+        color: #ffffff;
+    }
+    100%{
+        color: #ff0000;
+    }
+}
+
+@keyframes scaleUpDown{
+    0%{
+        scale: 100%;
+    }
+    50%{
+        scale: 112%;
+    }
+    100%{
+        scale: 100%;
+    }
 }
